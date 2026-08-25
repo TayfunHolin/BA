@@ -232,22 +232,6 @@ document.querySelectorAll('.faq-q').forEach(q => {
   });
 });
 
-/* ── HORIZONTAL SCROLL PORTFOLIO ─────────────────────── */
-const portWrap  = document.querySelector('.port-wrap');
-const portTrack = document.getElementById('portTrack');
-
-function updatePort() {
-  if (!portWrap || !portTrack || window.innerWidth <= 768) return;
-  const r = portWrap.getBoundingClientRect();
-  const h = portWrap.offsetHeight - innerHeight;
-  if (h <= 0) return;
-  const progress = Math.max(0, Math.min(1, -r.top / h));
-  const maxX = portTrack.scrollWidth - innerWidth + 144;
-  portTrack.style.transform = `translateX(${-maxX * progress}px)`;
-}
-window.addEventListener('scroll', updatePort, { passive:true });
-window.addEventListener('resize', updatePort);
-
 /* ── LIGHTBOX ────────────────────────────────────────── */
 const lb        = document.getElementById('lightbox');
 const lbImg     = document.getElementById('lbImg');
@@ -319,8 +303,6 @@ document.addEventListener('keydown', e => {
 const overlay   = document.getElementById('portOverlay');
 const portClose = document.getElementById('portClose');
 const portAllBtn = document.querySelector('.port-all');
-const poCards   = overlay ? overlay.querySelectorAll('.po-card') : [];
-const poFilters = overlay ? overlay.querySelectorAll('.po-filter') : [];
 
 function openOverlay() {
   overlay.classList.add('open');
@@ -343,17 +325,3 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && overlay && overlay.classList.contains('open')) closeOverlay();
 });
 
-poFilters.forEach(btn => {
-  btn.addEventListener('click', () => {
-    poFilters.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.dataset.cat;
-    poCards.forEach(card => {
-      if (cat === 'all' || card.dataset.cat === cat) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  });
-});

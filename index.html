@@ -30,36 +30,14 @@
 <!-- ═══ HERO ══════════════════════════════════════════ -->
 <section id="hero">
 
-  <!-- Botanical SVG — paths draw on load -->
-  <svg class="hero-svg" viewBox="0 0 380 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path class="dp" d="M190 28 C188 28 168 95 164 170 C160 248 182 360 192 488" stroke="#F5EFE0" stroke-width="1.4" stroke-linecap="round"/>
-    <path class="dp" d="M188 88  C162 72  130 52  96  34"  stroke="#F5EFE0" stroke-width="1"   stroke-linecap="round"/>
-    <path class="dp" d="M186 135 C158 120 122 108 88  102" stroke="#F5EFE0" stroke-width=".9"  stroke-linecap="round"/>
-    <path class="dp" d="M184 185 C155 173 118 165 84  161" stroke="#F5EFE0" stroke-width=".8"  stroke-linecap="round"/>
-    <path class="dp" d="M183 238 C156 228 124 222 96  220" stroke="#F5EFE0" stroke-width=".75" stroke-linecap="round"/>
-    <path class="dp" d="M183 290 C158 283 128 279 106 278" stroke="#F5EFE0" stroke-width=".7"  stroke-linecap="round"/>
-    <path class="dp" d="M192 110 C218 96  252 80  288 70"  stroke="#F5EFE0" stroke-width="1"   stroke-linecap="round"/>
-    <path class="dp" d="M190 158 C216 146 248 138 278 134" stroke="#F5EFE0" stroke-width=".9"  stroke-linecap="round"/>
-    <path class="dp" d="M188 208 C212 200 240 195 264 193" stroke="#F5EFE0" stroke-width=".8"  stroke-linecap="round"/>
-    <path class="dp" d="M187 260 C210 254 236 251 258 250" stroke="#F5EFE0" stroke-width=".7"  stroke-linecap="round"/>
-    <!-- flowers -->
-    <circle class="dp" cx="96"  cy="34"  r="13" stroke="#C4714A" stroke-width="1.3"/>
-    <circle class="dp" cx="96"  cy="34"  r="5"  stroke="#C4714A" stroke-width="1"/>
-    <circle class="dp" cx="288" cy="70"  r="10" stroke="#C4714A" stroke-width="1.2"/>
-    <circle class="dp" cx="288" cy="70"  r="4"  stroke="#C4714A" stroke-width="1"/>
-    <circle class="dp" cx="84"  cy="161" r="8"  stroke="#F5EFE0" stroke-width="1"   opacity=".65"/>
-    <circle class="dp" cx="264" cy="193" r="6"  stroke="#C4714A" stroke-width="1"   opacity=".8"/>
-    <circle class="dp" cx="106" cy="278" r="7"  stroke="#F5EFE0" stroke-width="1"   opacity=".55"/>
-    <circle class="dp" cx="258" cy="250" r="5"  stroke="#C4714A" stroke-width=".9"  opacity=".7"/>
-    <!-- petals -->
-    <path class="dp" d="M83 22 Q80 10 96 14 Q99 26 83 22Z" fill="rgba(245,239,224,.28)" stroke="none"/>
-    <path class="dp" d="M109 22 Q112 10 96 14 Q93 26 109 22Z" fill="rgba(245,239,224,.28)" stroke="none"/>
-    <path class="dp" d="M272 58 Q268 46 288 50 Q291 62 272 58Z" fill="rgba(245,239,224,.2)" stroke="none"/>
-    <path class="dp" d="M304 58 Q308 46 288 50 Q285 62 304 58Z" fill="rgba(245,239,224,.2)" stroke="none"/>
-  </svg>
+  <div class="hero-video-frame">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/hero-poster.jpg">
+      <source src="/hero-video.mp4" type="video/mp4">
+    </video>
+  </div>
 
-  <div>
-    <div class="h-label"><div class="h-label-i">Süsleme Atölyesi — Est. 2018</div></div>
+  <div class="h-top">
+    <div class="h-label"><div class="h-label-i">Süsleme Atölyesi — Est. 2015</div></div>
     <h1>
       <div class="h-line"><span class="h-main">BİESTİ</span></div>
       <div class="h-line"><span class="h-sub">Atölye</span></div>
@@ -127,60 +105,56 @@
   </div>
 </section>
 
-<!-- ═══ PORTFOLIO (horizontal scroll) ════════════════ -->
+<!-- ═══ PORTFOLIO (gallery grid) ══════════════════════ -->
 <div id="port">
-  <div class="port-wrap">
-    <div class="port-sticky">
-      <div class="port-hdr">
-        <div class="fu">
-          <div class="s-label">Seçilmiş Çalışmalar</div>
-          <h2>Mekânların <em>arşivi</em></h2>
-        </div>
-        <a href="#" class="port-all fu" data-d="2">Tüm Portföy (72)</a>
-      </div>
-      <div class="port-track" id="portTrack">
+  <div class="port-hdr">
+    <div class="fu">
+      <div class="s-label">Seçilmiş Çalışmalar</div>
+      <h2>Mekânların <em>arşivi</em></h2>
+    </div>
+    <a href="#" class="port-all fu" data-d="2">Tüm Portföy (31)</a>
+  </div>
+  <div class="port-track" id="portTrack">
         <div class="port-item" data-img="/Projectssss/p01.jpg">
-          <img class="port-bg" src="/Projectssss/p01.jpg" alt="Demir & Çelik Törensel Süsleme">
+          <img class="port-bg" src="/Projectssss/p01.jpg" alt="Ajda Pekkan Harbiye Konseri">
           <div class="port-num">01 / 05</div>
           <div class="port-info">
-            <div class="port-tag">Düğün · İstanbul · 2024</div>
-            <div class="port-title">Demir & Çelik Törensel Süsleme</div>
+            <div class="port-tag">Konser · İstanbul · 2026</div>
+            <div class="port-title">Ajda Pekkan Harbiye Konseri</div>
           </div>
         </div>
         <div class="port-item" data-img="/Projectssss/p02.jpg">
-          <img class="port-bg" src="/Projectssss/p02.jpg" alt="Boğaziçi Nişan Organizasyonu">
+          <img class="port-bg" src="/Projectssss/p02.jpg" alt="Ajda Pekkan Harbiye Konseri">
           <div class="port-num">02 / 05</div>
           <div class="port-info">
-            <div class="port-tag">Nişan · Ankara · 2024</div>
-            <div class="port-title">Boğaziçi Nişan Organizasyonu</div>
+            <div class="port-tag">Konser · İstanbul · 2026</div>
+            <div class="port-title">Ajda Pekkan Harbiye Konseri</div>
           </div>
         </div>
         <div class="port-item" data-img="/Projectssss/p03.jpg">
-          <img class="port-bg" src="/Projectssss/p03.jpg" alt="Beymen Güz / Kış Lansmanı">
+          <img class="port-bg" src="/Projectssss/p03.jpg" alt="Ajda Pekkan Harbiye Konseri">
           <div class="port-num">03 / 05</div>
           <div class="port-info">
-            <div class="port-tag">Vitrin · İstanbul · 2023</div>
-            <div class="port-title">Beymen Güz / Kış Lansmanı</div>
+            <div class="port-tag">Konser · İstanbul · 2026</div>
+            <div class="port-title">Ajda Pekkan Harbiye Konseri</div>
           </div>
         </div>
         <div class="port-item" data-img="/Projectssss/p04.jpg">
-          <img class="port-bg" src="/Projectssss/p04.jpg" alt="Geleneksel Kına Kurgulama">
+          <img class="port-bg" src="/Projectssss/p04.jpg" alt="Ajda Pekkan Harbiye Konseri">
           <div class="port-num">04 / 05</div>
           <div class="port-info">
-            <div class="port-tag">Kına · Bursa · 2024</div>
-            <div class="port-title">Geleneksel Kına Kurgulama</div>
+            <div class="port-tag">Konser · İstanbul · 2026</div>
+            <div class="port-title">Ajda Pekkan Harbiye Konseri</div>
           </div>
         </div>
         <div class="port-item" data-img="/Projectssss/p05.jpg">
-          <img class="port-bg" src="/Projectssss/p05.jpg" alt="Vakko Yaz Koleksiyonu">
+          <img class="port-bg" src="/Projectssss/p05.jpg" alt="Ajda Pekkan Harbiye Konseri">
           <div class="port-num">05 / 05</div>
           <div class="port-info">
-            <div class="port-tag">Vitrin · İstanbul · 2024</div>
-            <div class="port-title">Vakko Yaz Koleksiyonu</div>
+            <div class="port-tag">Konser · İstanbul · 2026</div>
+            <div class="port-title">Ajda Pekkan Harbiye Konseri</div>
           </div>
         </div>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -189,13 +163,13 @@
   <div class="ab-img fu">
     <div class="ab-main"></div>
     <div class="ab-accent"></div>
-    <div class="ab-badge"><span>2018</span></div>
+    <div class="ab-badge"><span>2015</span></div>
   </div>
   <div class="ab-content fu" data-d="2">
     <div class="s-label">Hikâyemiz</div>
     <h2 style="margin-bottom:26px">Bir atölyenin<br><em>kökü</em> derinden gelir</h2>
-    <p class="ab-p">2018'de küçük bir stüdyoda başladık. Elimizde kurutulmuş çiçekler, yüzümüzde büyük bir düğün konseptini hayata geçirme heyecanı vardı.</p>
-    <p class="ab-p">Bugün 340'tan fazla törenin ve onlarca markanın mekânlarına dokunmuş bir atölye olarak, hâlâ aynı sabırla ve el emeğiyle çalışıyoruz.</p>
+    <p class="ab-p">2015'te küçük bir stüdyoda başladık. Elimizde kurutulmuş çiçekler, yüzümüzde büyük bir düğün konseptini hayata geçirme heyecanı vardı.</p>
+    <p class="ab-p">Bugün 200'den fazla törenin ve onlarca markanın mekânlarına dokunmuş bir atölye olarak, hâlâ aynı sabırla ve el emeğiyle çalışıyoruz.</p>
     <p class="ab-p">Vitrin için olduğu kadar düğün için de aynı titizliği taşırız. Çünkü mekânlar, insanların hayatlarına dokunduğu anlardır.</p>
     <div class="sig">Meryem Akarsun</div>
     <div class="sig-role">Kurucu & Tasarım Direktörü</div>
@@ -204,22 +178,38 @@
 
 <!-- ═══ STATS ══════════════════════════════════════════ -->
 <div class="stats" data-nav="light">
-  <div class="st fu" data-d="1"><div class="st-n" data-target="340">0</div><div class="st-l">Tamamlanan Proje</div></div>
-  <div class="st fu" data-d="2"><div class="st-n" data-target="7">0</div><div class="st-l">Yıllık Deneyim</div></div>
-  <div class="st fu" data-d="3"><div class="st-n" data-target="48">0</div><div class="st-l">Marka Ortaklığı</div></div>
+  <div class="st fu" data-d="1"><div class="st-n" data-target="200">0</div><div class="st-l">Tamamlanan Proje</div></div>
+  <div class="st fu" data-d="2"><div class="st-n" data-target="11">0</div><div class="st-l">Yıllık Deneyim</div></div>
+  <div class="st fu" data-d="3"><div class="st-n" data-target="20">0</div><div class="st-l">Marka Ortaklığı</div></div>
   <div class="st fu" data-d="4"><div class="st-n" data-target="12">0</div><div class="st-l">Şehir</div></div>
 </div>
 
 <!-- ═══ BRANDS ════════════════════════════════════════ -->
 <div class="brands">
   <div class="b-label">Güven Duyduğumuz Markalar</div>
-  <div class="b-row">
-    <div class="b-name">BEYMEN</div>
-    <div class="b-name">VAKKO</div>
-    <div class="b-name">HARVEY NICHOLS</div>
-    <div class="b-name">MUDO</div>
-    <div class="b-name">NETWORK</div>
-    <div class="b-name">PIERRE CARDIN</div>
+  <div class="b-marquee">
+    <div class="b-track">
+      <div class="b-row">
+        <div class="b-logo"><img src="/Logolar/Boyner_Logo.jpg" alt="Boyner"></div>
+        <div class="b-logo"><img src="/Logolar/Sephora_logo.svg" alt="Sephora"></div>
+        <div class="b-logo"><img src="/Logolar/dilaragold.png" alt="D'lara Chocolate & Events"></div>
+        <div class="b-logo"><img src="/Logolar/logo_siyah.avif" alt="Sunday"></div>
+        <div class="b-logo"><img src="/Logolar/153718001_4097714780247279_2087323746370955929_n.jpg" alt="Oğulcan Özkan Wedding Planner & Designer"></div>
+        <div class="b-logo"><img src="/Logolar/1771874751587-9krupn.png" alt="Lisan-ı Ezhar"></div>
+        <div class="b-logo"><img src="/Logolar/344801744_6282504135149021_6081036566998754441_n.jpg" alt="Ceremony Events"></div>
+        <div class="b-logo"><img src="/Logolar/365024864_1027195378316470_4237116390810885388_n.jpg" alt="Q Organizasyon"></div>
+      </div>
+      <div class="b-row" aria-hidden="true">
+        <div class="b-logo"><img src="/Logolar/Boyner_Logo.jpg" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/Sephora_logo.svg" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/dilaragold.png" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/logo_siyah.avif" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/153718001_4097714780247279_2087323746370955929_n.jpg" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/1771874751587-9krupn.png" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/344801744_6282504135149021_6081036566998754441_n.jpg" alt="" aria-hidden="true"></div>
+        <div class="b-logo"><img src="/Logolar/365024864_1027195378316470_4237116390810885388_n.jpg" alt="" aria-hidden="true"></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -245,7 +235,7 @@
       <p class="rev-quote">Düğün salonumuza girdiğimizde neredeyse ağladık. Her detay tam istediğimiz gibi değil — hayal edemediğimizden de güzeldi.</p>
       <div class="rev-meta">
         <div class="rev-name">Elif & Emre Kaya</div>
-        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Mayıs 2024</div>
+        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Mayıs 2026</div>
       </div>
     </div>
 
@@ -258,7 +248,7 @@
       <p class="rev-quote">Kına gecemiz tam hayal ettiğimiz gibi oldu. Geleneksel unsurları modern bir yorumla sunmaları bizi çok etkiledi.</p>
       <div class="rev-meta">
         <div class="rev-name">Zeynep Arslan</div>
-        <div class="rev-detail"><em>Kına Gecesi</em> &nbsp;·&nbsp; Mart 2024</div>
+        <div class="rev-detail"><em>Kına Gecesi</em> &nbsp;·&nbsp; Mart 2026</div>
       </div>
     </div>
 
@@ -266,12 +256,12 @@
       <div class="rev-stars">
         <span class="rev-star">★</span><span class="rev-star">★</span>
         <span class="rev-star">★</span><span class="rev-star">★</span>
-        <span class="rev-star off">★</span>
+        <span class="rev-star">★</span>
       </div>
-      <p class="rev-quote">Nişan organizasyonumuz için çok titiz çalıştılar. Mekân bambaşka bir havaya büründü. Tek eksik küçük bir gecikme oldu ama sonuç muhteşemdi.</p>
+      <p class="rev-quote">Aldığım beyaz çiçekler beklentimin de ötesinde güzel geldi, harikalardı. Hem zarif hem de çok özenli hazırlanmış, mükemmel işçilik. Kalitesi ve duruşu dekorumda çok şık bir görüntü oluşturdu. Elinize, emeğinize sağlık.</p>
       <div class="rev-meta">
-        <div class="rev-name">Seda & Burak Yılmaz</div>
-        <div class="rev-detail"><em>Nişan Töreni</em> &nbsp;·&nbsp; Şubat 2024</div>
+        <div class="rev-name">Kübra Zafer — Q Organizasyon</div>
+        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Ağustos 2026</div>
       </div>
     </div>
 
@@ -281,10 +271,10 @@
         <span class="rev-star">★</span><span class="rev-star">★</span>
         <span class="rev-star">★</span>
       </div>
-      <p class="rev-quote">Beymen vitrin çalışmamız için Biesti Atölye ile çalıştık. Kurumsal beklentileri sanatsal bir hassasiyetle karşıladılar. Kesinlikle tekrar çalışacağız.</p>
+      <p class="rev-quote">MeKa Event Design olarak projelerimizde kullandığımız dev çiçeklerde kalite, estetik ve sahne etkisi bizim için vazgeçilmez. Biesti Atölye ile gerçekleştirdiğimiz çalışmalarda, ürünlerin duruşu ve detay kalitesi tasarımlarımızı her zaman bir üst seviyeye taşıyor. Meryem Hanım'ın titiz yaklaşımı ve üretim kalitesi sayesinde uzun süredir güvenle tercih ettiğimiz, değerli bir iş ortağı.</p>
       <div class="rev-meta">
-        <div class="rev-name">Ayşe Demir — Beymen</div>
-        <div class="rev-detail"><em>Vitrin & Marka</em> &nbsp;·&nbsp; Ekim 2023</div>
+        <div class="rev-name">Merve-Kazım Varlı — MeKa Event Design</div>
+        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Ağustos 2026</div>
       </div>
     </div>
 
@@ -297,7 +287,7 @@
       <p class="rev-quote">Gelin olarak çiçek seçiminden masa düzenine kadar her şeyde fikirlerimi dikkate aldılar. İnce zevkleri ve sabırlı yaklaşımları için teşekkürler.</p>
       <div class="rev-meta">
         <div class="rev-name">Merve Çelik</div>
-        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Ağustos 2024</div>
+        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Ağustos 2026</div>
       </div>
     </div>
 
@@ -307,10 +297,10 @@
         <span class="rev-star">★</span><span class="rev-star">★</span>
         <span class="rev-star">★</span>
       </div>
-      <p class="rev-quote">Kışlık koleksiyon vitrinimiz için çalıştık. Markanın ruhunu mekâna o kadar iyi yansıttılar ki müşteri geri dönüşleri inanılmaz oldu.</p>
+      <p class="rev-quote">Düğünümüzde hayal ettiğimiz her detayı gerçeğe dönüştürdüler. Salona girdiğimiz an nefesimiz kesildi, misafirlerimiz hâlâ o güzellikten bahsediyor.</p>
       <div class="rev-meta">
-        <div class="rev-name">Murat Aydın — Vakko</div>
-        <div class="rev-detail"><em>Vitrin & Marka</em> &nbsp;·&nbsp; Kasım 2023</div>
+        <div class="rev-name">Aslı & Kaan Öztürk</div>
+        <div class="rev-detail"><em>Düğün Süsleme</em> &nbsp;·&nbsp; Haziran 2026</div>
       </div>
     </div>
 
@@ -527,203 +517,6 @@
   </div>
 </section>
 
-<!-- ═══ INSTAGRAM ════════════════════════════════════════ -->
-<section id="instagram">
-
-  <div class="ig-top fu">
-    <div class="ig-handle-wrap">
-      <div class="ig-avatar">
-        <div class="ig-avatar-inner"><span>A</span></div>
-      </div>
-      <div class="ig-meta">
-        <div class="ig-handle">@biesti<b>.</b>atelye</div>
-        <div class="ig-stats">
-          <span><b>2.4K</b> Takipçi</span>
-          <span><b>340+</b> Gönderi</span>
-          <span><b>48</b> Proje</span>
-        </div>
-      </div>
-    </div>
-    <a href="https://www.instagram.com/biestiatolye/" target="_blank" rel="noopener" class="ig-follow mag">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
-        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-      </svg>
-      <span>Instagram'da Takip Et</span>
-    </a>
-  </div>
-
-  <!-- 8 post grid: 1 featured (2×2) + 7 regular -->
-  <div class="ig-grid fu" data-d="2">
-
-    <div class="ig-post feat">
-      <div class="ig-post-bg bg-a">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M60 10 C60 10 44 50 42 80 C40 110 56 145 60 155" stroke="#F5EFE0" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M58 40 C44 32 30 22 18 12" stroke="#F5EFE0" stroke-width=".8" stroke-linecap="round"/>
-            <path d="M58 62 C46 56 32 50 20 48" stroke="#F5EFE0" stroke-width=".7" stroke-linecap="round"/>
-            <path d="M62 50 C74 42 88 34 102 26" stroke="#F5EFE0" stroke-width=".8" stroke-linecap="round"/>
-            <circle cx="18" cy="12" r="7" stroke="#C4714A" stroke-width="1"/>
-            <circle cx="102" cy="26" r="5" stroke="#C4714A" stroke-width="1"/>
-            <circle cx="20" cy="48" r="4" stroke="#F5EFE0" stroke-width=".8" opacity=".6"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            218
-          </div>
-          <div class="ig-overlay-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-width="1.5" fill="none" stroke="rgba(245,239,224,.8)"/></svg>
-            34
-          </div>
-        </div>
-        <div class="ig-overlay-tag">Düğün · 2024</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-b">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <circle cx="30" cy="30" r="22" stroke="#F5EFE0" stroke-width=".8" opacity=".6"/>
-            <circle cx="30" cy="30" r="12" stroke="#C4714A" stroke-width=".8"/>
-            <circle cx="30" cy="30" r="3"  stroke="#C4714A" stroke-width="1"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>142</div>
-        </div>
-        <div class="ig-overlay-tag">Nişan · 2024</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-c">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <path d="M30 8 C30 8 20 24 20 34 C20 44 28 54 30 56" stroke="#F5EFE0" stroke-width="1" stroke-linecap="round" opacity=".7"/>
-            <path d="M29 22 C22 18 16 14 10 10" stroke="#C4714A" stroke-width=".8" stroke-linecap="round"/>
-            <path d="M31 26 C38 22 44 18 50 14" stroke="#C4714A" stroke-width=".8" stroke-linecap="round"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>97</div>
-        </div>
-        <div class="ig-overlay-tag">Vitrin · 2023</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-d">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <path d="M10 50 Q30 10 50 50" stroke="#F5EFE0" stroke-width=".8" opacity=".5"/>
-            <path d="M15 50 Q30 18 45 50" stroke="#C4714A" stroke-width=".6" opacity=".6"/>
-            <circle cx="30" cy="18" r="5" stroke="#C4714A" stroke-width=".8"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>183</div>
-        </div>
-        <div class="ig-overlay-tag">Kına · 2024</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-e">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <rect x="12" y="12" width="36" height="36" stroke="#F5EFE0" stroke-width=".8" opacity=".4"/>
-            <rect x="20" y="20" width="20" height="20" stroke="#C4714A" stroke-width=".7" opacity=".6"/>
-            <circle cx="30" cy="30" r="4" stroke="#F5EFE0" stroke-width=".8" opacity=".5"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>261</div>
-        </div>
-        <div class="ig-overlay-tag">Vitrin · 2024</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-f">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <path d="M30 10 L50 50 L10 50 Z" stroke="#F5EFE0" stroke-width=".7" opacity=".3"/>
-            <path d="M30 20 L44 46 L16 46 Z" stroke="#C4714A" stroke-width=".7" opacity=".5"/>
-            <circle cx="30" cy="34" r="4" stroke="#C4714A" stroke-width=".8"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>119</div>
-        </div>
-        <div class="ig-overlay-tag">Düğün · 2024</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-g">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <path d="M8 30 Q20 10 30 30 Q40 50 52 30" stroke="#F5EFE0" stroke-width=".8" opacity=".4"/>
-            <path d="M8 36 Q20 16 30 36 Q40 56 52 36" stroke="#C4714A" stroke-width=".7" opacity=".5"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>77</div>
-        </div>
-        <div class="ig-overlay-tag">Nişan · 2023</div>
-      </div>
-    </div>
-
-    <div class="ig-post">
-      <div class="ig-post-bg bg-h">
-        <div class="ig-post-deco">
-          <svg viewBox="0 0 60 60" fill="none">
-            <circle cx="20" cy="20" r="10" stroke="#F5EFE0" stroke-width=".7" opacity=".35"/>
-            <circle cx="40" cy="40" r="10" stroke="#C4714A" stroke-width=".7" opacity=".45"/>
-            <circle cx="40" cy="20" r="6"  stroke="#F5EFE0" stroke-width=".6" opacity=".3"/>
-            <circle cx="20" cy="40" r="6"  stroke="#C4714A" stroke-width=".6" opacity=".4"/>
-          </svg>
-        </div>
-      </div>
-      <div class="ig-overlay">
-        <div class="ig-overlay-icons">
-          <div class="ig-overlay-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>204</div>
-        </div>
-        <div class="ig-overlay-tag">Kına · 2023</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- scrolling hashtag strip -->
-  <div class="ig-strip" aria-hidden="true">
-    <div class="ig-strip-track">
-      <span class="ig-strip-item">#düğünsüsleme <em>·</em> #kınagecesi <em>·</em> #nişan <em>·</em> #vitrin <em>·</em> #süsleme <em>·</em> #wedding <em>·</em> #weddingdecor <em>·</em> #handmade <em>·</em> #atelye <em>·</em></span>
-      <span class="ig-strip-item">#düğünsüsleme <em>·</em> #kınagecesi <em>·</em> #nişan <em>·</em> #vitrin <em>·</em> #süsleme <em>·</em> #wedding <em>·</em> #weddingdecor <em>·</em> #handmade <em>·</em> #atelye <em>·</em></span>
-      <span class="ig-strip-item">#düğünsüsleme <em>·</em> #kınagecesi <em>·</em> #nişan <em>·</em> #vitrin <em>·</em> #süsleme <em>·</em> #wedding <em>·</em> #weddingdecor <em>·</em> #handmade <em>·</em> #atelye <em>·</em></span>
-    </div>
-  </div>
-
-</section>
-
 <!-- ═══ CONTACT ════════════════════════════════════════ -->
 <section id="contact">
   <div class="contact-head fu">
@@ -736,7 +529,16 @@
       <div class="cd"><span class="cd-l">Telefon</span><span class="cd-v">+90 536 648 10 72</span></div>
       <div class="cd"><span class="cd-l">E-posta</span><span class="cd-v">merhaba@biestiatole.com</span></div>
       <div class="cd"><span class="cd-l">Çalışma</span><span class="cd-v">Pzt – Cmt, 09:00 – 18:00</span></div>
-      <a href="https://wa.me/905366481072" target="_blank" rel="noopener noreferrer" class="wa-btn"><span>WhatsApp'tan Yazın</span></a>
+      <div class="cta-stack">
+        <a href="https://wa.me/905366481072" target="_blank" rel="noopener noreferrer" class="wa-btn"><span>WhatsApp'tan Yazın</span></a>
+        <a href="https://www.instagram.com/biestiatolye/" target="_blank" rel="noopener" class="ig-follow mag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>Instagram'da Takip Et</span>
+        </a>
+      </div>
     </div>
     <form class="form fu" data-d="2" onsubmit="return false">
       <div class="fg-row">
@@ -780,7 +582,7 @@
     </div>
   </div>
   <div class="fb">
-    <div class="fc">© 2025 Biesti Atölye. Tüm hakları saklıdır.</div>
+    <div class="fc">© 2026 Biesti Atölye. Tüm hakları saklıdır.</div>
     <div class="fc">Gizlilik Politikası · Çerez Kullanımı</div>
   </div>
 </footer>
@@ -804,523 +606,229 @@
       <div class="s-label" style="color:rgba(196,113,74,.7)">Biesti Atölye</div>
       <h2 style="color:var(--cream);margin-top:8px">Tüm <em>Çalışmalar</em></h2>
     </div>
-    <div class="po-right">
-      <div class="po-filters">
-        <button class="po-filter active" data-cat="all">Tümü</button>
-        <button class="po-filter" data-cat="dugun">Düğün</button>
-        <button class="po-filter" data-cat="nisan">Nişan</button>
-        <button class="po-filter" data-cat="kina">Kına</button>
-        <button class="po-filter" data-cat="vitrin">Vitrin</button>
-      </div>
-      <button class="po-close" id="portClose" aria-label="Kapat">✕</button>
-    </div>
+    <button class="po-close" id="portClose" aria-label="Kapat">✕</button>
   </div>
 
   <div class="po-grid" id="portGrid">
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p01.jpg">
-      <img class="po-bg" src="/Projectssss/p01.jpg" alt="Demir & Çelik Törensel Süsleme">
+   <div class="po-grid-inner">
+    <div class="po-card" data-cat="konser" data-img="/Projectssss/p01.jpg">
+      <img class="po-bg" src="/Projectssss/p01.jpg" alt="Ajda Pekkan Harbiye Konseri">
       <div class="po-card-info">
-        <div class="po-card-tag">Düğün · İstanbul · 2024</div>
-        <div class="po-card-title">Demir & Çelik Törensel Süsleme</div>
+        <div class="po-card-tag">Konser · İstanbul · 2026</div>
+        <div class="po-card-title">Ajda Pekkan Harbiye Konseri</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p02.jpg">
-      <img class="po-bg" src="/Projectssss/p02.jpg" alt="Boğaziçi Nişan Organizasyonu">
+    <div class="po-card" data-cat="konser" data-img="/Projectssss/p02.jpg">
+      <img class="po-bg" src="/Projectssss/p02.jpg" alt="Ajda Pekkan Harbiye Konseri">
       <div class="po-card-info">
-        <div class="po-card-tag">Nişan · Ankara · 2024</div>
-        <div class="po-card-title">Boğaziçi Nişan Organizasyonu</div>
+        <div class="po-card-tag">Konser · İstanbul · 2026</div>
+        <div class="po-card-title">Ajda Pekkan Harbiye Konseri</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p03.jpg">
-      <img class="po-bg" src="/Projectssss/p03.jpg" alt="Beymen Güz / Kış Lansmanı">
+    <div class="po-card" data-cat="konser" data-img="/Projectssss/p03.jpg">
+      <img class="po-bg" src="/Projectssss/p03.jpg" alt="Ajda Pekkan Harbiye Konseri">
       <div class="po-card-info">
-        <div class="po-card-tag">Vitrin · İstanbul · 2023</div>
-        <div class="po-card-title">Beymen Güz / Kış Lansmanı</div>
+        <div class="po-card-tag">Konser · İstanbul · 2026</div>
+        <div class="po-card-title">Ajda Pekkan Harbiye Konseri</div>
       </div>
     </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/p04.jpg">
-      <img class="po-bg" src="/Projectssss/p04.jpg" alt="Geleneksel Kına Kurgulama">
+    <div class="po-card" data-cat="konser" data-img="/Projectssss/p04.jpg">
+      <img class="po-bg" src="/Projectssss/p04.jpg" alt="Ajda Pekkan Harbiye Konseri">
       <div class="po-card-info">
-        <div class="po-card-tag">Kına · Bursa · 2024</div>
-        <div class="po-card-title">Geleneksel Kına Kurgulama</div>
+        <div class="po-card-tag">Konser · İstanbul · 2026</div>
+        <div class="po-card-title">Ajda Pekkan Harbiye Konseri</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p05.jpg">
-      <img class="po-bg" src="/Projectssss/p05.jpg" alt="Vakko Yaz Koleksiyonu">
+    <div class="po-card" data-cat="konser" data-img="/Projectssss/p05.jpg">
+      <img class="po-bg" src="/Projectssss/p05.jpg" alt="Ajda Pekkan Harbiye Konseri">
       <div class="po-card-info">
-        <div class="po-card-tag">Vitrin · İstanbul · 2024</div>
-        <div class="po-card-title">Vakko Yaz Koleksiyonu</div>
+        <div class="po-card-tag">Konser · İstanbul · 2026</div>
+        <div class="po-card-title">Ajda Pekkan Harbiye Konseri</div>
       </div>
     </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p06.jpg">
-      <img class="po-bg" src="/Projectssss/p06.jpg" alt="Orman Töreni — Açık Alan">
+    <div class="po-card" data-cat="konser" data-img="/Projectssss/p06.jpg">
+      <img class="po-bg" src="/Projectssss/p06.jpg" alt="Ajda Pekkan Harbiye Konseri">
       <div class="po-card-info">
-        <div class="po-card-tag">Düğün · Muğla · 2024</div>
-        <div class="po-card-title">Orman Töreni — Açık Alan</div>
+        <div class="po-card-tag">Konser · İstanbul · 2026</div>
+        <div class="po-card-title">Ajda Pekkan Harbiye Konseri</div>
       </div>
     </div>
     <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p07.jpg">
-      <img class="po-bg" src="/Projectssss/p07.jpg" alt="Swarovski İstanbul Açılışı">
+      <img class="po-bg" src="/Projectssss/p07.jpg" alt="Sephora Vitrin Çalışması">
       <div class="po-card-info">
-        <div class="po-card-tag">Vitrin · İstanbul · 2024</div>
-        <div class="po-card-title">Swarovski İstanbul Açılışı</div>
+        <div class="po-card-tag">Vitrin · İstanbul · 2026</div>
+        <div class="po-card-title">Sephora Vitrin Çalışması</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p08.jpg">
-      <img class="po-bg" src="/Projectssss/p08.jpg" alt="Çırağan Sarayı Nişan Gecesi">
+    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p08.jpg">
+      <img class="po-bg" src="/Projectssss/p08.jpg" alt="Sephora Vitrin Çalışması">
       <div class="po-card-info">
-        <div class="po-card-tag">Nişan · İstanbul · 2023</div>
-        <div class="po-card-title">Çırağan Sarayı Nişan Gecesi</div>
+        <div class="po-card-tag">Vitrin · İstanbul · 2026</div>
+        <div class="po-card-title">Sephora Vitrin Çalışması</div>
       </div>
     </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/p09.jpg">
-      <img class="po-bg" src="/Projectssss/p09.jpg" alt="Osmanlı Motifli Kına Kurgusu">
+    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p09.jpg">
+      <img class="po-bg" src="/Projectssss/p09.jpg" alt="Sephora Vitrin Çalışması">
       <div class="po-card-info">
-        <div class="po-card-tag">Kına · İstanbul · 2024</div>
-        <div class="po-card-title">Osmanlı Motifli Kına Kurgusu</div>
+        <div class="po-card-tag">Vitrin · İstanbul · 2026</div>
+        <div class="po-card-title">Sephora Vitrin Çalışması</div>
       </div>
     </div>
     <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p10.jpg">
-      <img class="po-bg" src="/Projectssss/p10.jpg" alt="Bottega Veneta Sonbahar">
+      <img class="po-bg" src="/Projectssss/p10.jpg" alt="Sephora Vitrin Çalışması">
       <div class="po-card-info">
-        <div class="po-card-tag">Vitrin · İstanbul · 2023</div>
-        <div class="po-card-title">Bottega Veneta Sonbahar</div>
+        <div class="po-card-tag">Vitrin · İstanbul · 2026</div>
+        <div class="po-card-title">Sephora Vitrin Çalışması</div>
       </div>
     </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p11.jpg">
-      <img class="po-bg" src="/Projectssss/p11.jpg" alt="Göl Kenarı Romantik Tören">
+    <div class="po-card" data-cat="kina" data-img="/Projectssss/p11.jpg">
+      <img class="po-bg" src="/Projectssss/p11.jpg" alt="Sakarya Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Düğün · Sapanca · 2024</div>
-        <div class="po-card-title">Göl Kenarı Romantik Tören</div>
+        <div class="po-card-tag">Kına · Sakarya · 2026</div>
+        <div class="po-card-title">Sakarya Kına Gecesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p12.jpg">
-      <img class="po-bg" src="/Projectssss/p12.jpg" alt="Tiffany & Co. Bahar Sergisi">
+    <div class="po-card" data-cat="kina" data-img="/Projectssss/p12.jpg">
+      <img class="po-bg" src="/Projectssss/p12.jpg" alt="Sakarya Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Vitrin · İstanbul · 2024</div>
-        <div class="po-card-title">Tiffany & Co. Bahar Sergisi</div>
+        <div class="po-card-tag">Kına · Sakarya · 2026</div>
+        <div class="po-card-title">Sakarya Kına Gecesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p13.jpg">
-      <img class="po-bg" src="/Projectssss/p13.jpg" alt="Çalışma 13">
+    <div class="po-card" data-cat="kina" data-img="/Projectssss/p13.jpg">
+      <img class="po-bg" src="/Projectssss/p13.jpg" alt="Sakarya Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 13</div>
+        <div class="po-card-tag">Kına · Sakarya · 2026</div>
+        <div class="po-card-title">Sakarya Kına Gecesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p14.jpg">
-      <img class="po-bg" src="/Projectssss/p14.jpg" alt="Çalışma 14">
+    <div class="po-card" data-cat="kina" data-img="/Projectssss/p14.jpg">
+      <img class="po-bg" src="/Projectssss/p14.jpg" alt="Sakarya Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 14</div>
+        <div class="po-card-tag">Kına · Sakarya · 2026</div>
+        <div class="po-card-title">Sakarya Kına Gecesi</div>
       </div>
     </div>
     <div class="po-card" data-cat="kina" data-img="/Projectssss/p15.jpg">
-      <img class="po-bg" src="/Projectssss/p15.jpg" alt="Çalışma 15">
+      <img class="po-bg" src="/Projectssss/p15.jpg" alt="Sakarya Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 15</div>
+        <div class="po-card-tag">Kına · Sakarya · 2026</div>
+        <div class="po-card-title">Sakarya Kına Gecesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p16.jpg">
-      <img class="po-bg" src="/Projectssss/p16.jpg" alt="Çalışma 16">
+    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p16.jpg">
+      <img class="po-bg" src="/Projectssss/p16.jpg" alt="Masal Garden Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 16</div>
+        <div class="po-card-tag">Düğün · Sakarya · 2025</div>
+        <div class="po-card-title">Masal Garden Düğün</div>
       </div>
     </div>
     <div class="po-card" data-cat="dugun" data-img="/Projectssss/p17.jpg">
-      <img class="po-bg" src="/Projectssss/p17.jpg" alt="Çalışma 17">
+      <img class="po-bg" src="/Projectssss/p17.jpg" alt="Masal Garden Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 17</div>
+        <div class="po-card-tag">Düğün · Sakarya · 2025</div>
+        <div class="po-card-title">Masal Garden Düğün</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p18.jpg">
-      <img class="po-bg" src="/Projectssss/p18.jpg" alt="Çalışma 18">
+    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p18.jpg">
+      <img class="po-bg" src="/Projectssss/p18.jpg" alt="Masal Garden Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 18</div>
+        <div class="po-card-tag">Düğün · Sakarya · 2025</div>
+        <div class="po-card-title">Masal Garden Düğün</div>
       </div>
     </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/p19.jpg">
-      <img class="po-bg" src="/Projectssss/p19.jpg" alt="Çalışma 19">
+    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p19.jpg">
+      <img class="po-bg" src="/Projectssss/p19.jpg" alt="Masal Garden Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 19</div>
+        <div class="po-card-tag">Düğün · Sakarya · 2025</div>
+        <div class="po-card-title">Masal Garden Düğün</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p20.jpg">
-      <img class="po-bg" src="/Projectssss/p20.jpg" alt="Çalışma 20">
+    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p20.jpg">
+      <img class="po-bg" src="/Projectssss/p20.jpg" alt="Masal Garden Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 20</div>
+        <div class="po-card-tag">Düğün · Sakarya · 2025</div>
+        <div class="po-card-title">Masal Garden Düğün</div>
       </div>
     </div>
     <div class="po-card" data-cat="dugun" data-img="/Projectssss/p21.jpg">
-      <img class="po-bg" src="/Projectssss/p21.jpg" alt="Çalışma 21">
+      <img class="po-bg" src="/Projectssss/p21.jpg" alt="Kemer Country Club Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 21</div>
+        <div class="po-card-tag">Düğün · İstanbul · 2025</div>
+        <div class="po-card-title">Kemer Country Club Düğün</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p22.jpg">
-      <img class="po-bg" src="/Projectssss/p22.jpg" alt="Çalışma 22">
+    <div class="po-card" data-cat="kina" data-img="/Projectssss/p22.jpg">
+      <img class="po-bg" src="/Projectssss/p22.jpg" alt="Çırağan Sarayı Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 22</div>
+        <div class="po-card-tag">Kına · İstanbul · 2025</div>
+        <div class="po-card-title">Çırağan Sarayı Kına Gecesi</div>
       </div>
     </div>
     <div class="po-card" data-cat="kina" data-img="/Projectssss/p23.jpg">
-      <img class="po-bg" src="/Projectssss/p23.jpg" alt="Çalışma 23">
+      <img class="po-bg" src="/Projectssss/p23.jpg" alt="Han Sapanca Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 23</div>
+        <div class="po-card-tag">Kına · Sakarya · 2025</div>
+        <div class="po-card-title">Han Sapanca Kına Gecesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p24.jpg">
-      <img class="po-bg" src="/Projectssss/p24.jpg" alt="Çalışma 24">
+    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p24.jpg">
+      <img class="po-bg" src="/Projectssss/p24.jpg" alt="Çırağan Palace Nişan Töreni">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 24</div>
+        <div class="po-card-tag">Nişan · İstanbul · 2025</div>
+        <div class="po-card-title">Çırağan Palace Nişan Töreni</div>
       </div>
     </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p25.jpg">
-      <img class="po-bg" src="/Projectssss/p25.jpg" alt="Çalışma 25">
+    <div class="po-card" data-cat="kina" data-img="/Projectssss/p25.jpg">
+      <img class="po-bg" src="/Projectssss/p25.jpg" alt="Sakarya Kına Gecesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 25</div>
+        <div class="po-card-tag">Kına · Sakarya · 2024</div>
+        <div class="po-card-title">Sakarya Kına Gecesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p26.jpg">
-      <img class="po-bg" src="/Projectssss/p26.jpg" alt="Çalışma 26">
+    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p26.jpg">
+      <img class="po-bg" src="/Projectssss/p26.jpg" alt="Isparta Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 26</div>
+        <div class="po-card-tag">Düğün · Isparta · 2023</div>
+        <div class="po-card-title">Isparta Düğün</div>
       </div>
     </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/p27.jpg">
-      <img class="po-bg" src="/Projectssss/p27.jpg" alt="Çalışma 27">
+    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p27.jpg">
+      <img class="po-bg" src="/Projectssss/p27.jpg" alt="Isparta Düğün">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 27</div>
+        <div class="po-card-tag">Düğün · Isparta · 2023</div>
+        <div class="po-card-title">Isparta Düğün</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p28.jpg">
-      <img class="po-bg" src="/Projectssss/p28.jpg" alt="Çalışma 28">
+    <div class="po-card" data-cat="etkinlik" data-img="/Projectssss/p28.jpg">
+      <img class="po-bg" src="/Projectssss/p28.jpg" alt="Illusione Perfume Etkinlik Süslemesi">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 28</div>
+        <div class="po-card-tag">Etkinlik · Klein Harbiye, İstanbul · 2026</div>
+        <div class="po-card-title">Illusione Perfume Etkinlik Süslemesi</div>
       </div>
     </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p29.jpg">
-      <img class="po-bg" src="/Projectssss/p29.jpg" alt="Çalışma 29">
+    <div class="po-card" data-cat="davet" data-img="/Projectssss/p29.jpg">
+      <img class="po-bg" src="/Projectssss/p29.jpg" alt="Adıbahçe Davet">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 29</div>
+        <div class="po-card-tag">Davet · Sakarya · 2026</div>
+        <div class="po-card-title">Adıbahçe Davet</div>
       </div>
     </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p30.jpg">
-      <img class="po-bg" src="/Projectssss/p30.jpg" alt="Çalışma 30">
+    <div class="po-card" data-cat="davet" data-img="/Projectssss/p30.jpg">
+      <img class="po-bg" src="/Projectssss/p30.jpg" alt="Adıbahçe Davet">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 30</div>
+        <div class="po-card-tag">Davet · Sakarya · 2026</div>
+        <div class="po-card-title">Adıbahçe Davet</div>
       </div>
     </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/p31.jpg">
-      <img class="po-bg" src="/Projectssss/p31.jpg" alt="Çalışma 31">
+    <div class="po-card" data-cat="davet" data-img="/Projectssss/p31.jpg">
+      <img class="po-bg" src="/Projectssss/p31.jpg" alt="Adıbahçe Davet">
       <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 31</div>
+        <div class="po-card-tag">Davet · Sakarya · 2026</div>
+        <div class="po-card-title">Adıbahçe Davet</div>
       </div>
     </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p32.jpg">
-      <img class="po-bg" src="/Projectssss/p32.jpg" alt="Çalışma 32">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 32</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/p33.jpg">
-      <img class="po-bg" src="/Projectssss/p33.jpg" alt="Çalışma 33">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 33</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/p34.jpg">
-      <img class="po-bg" src="/Projectssss/p34.jpg" alt="Çalışma 34">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 34</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/p35.jpg">
-      <img class="po-bg" src="/Projectssss/p35.jpg" alt="Çalışma 35">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 35</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/p36.jpg">
-      <img class="po-bg" src="/Projectssss/p36.jpg" alt="Çalışma 36">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Çalışma 36</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%281%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%281%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%282%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%282%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%283%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%283%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%284%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%284%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%285%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%285%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%286%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%286%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%287%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15%20%287%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.15.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16%20%281%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16%20%281%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16%20%282%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16%20%282%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16%20%283%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16%20%283%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.16.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%281%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%281%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2810%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2810%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2811%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2811%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2812%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2812%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2813%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%2813%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%282%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%282%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%283%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%283%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%284%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%284%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%285%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%285%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%286%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%286%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%287%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%287%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%288%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%288%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%289%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17%20%289%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.17.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%281%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%281%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%282%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%282%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%283%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%283%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%284%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%284%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%285%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%285%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%286%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%286%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="dugun" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%287%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%287%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="nisan" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%288%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%288%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="kina" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%289%29.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18%20%289%29.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
-    <div class="po-card" data-cat="vitrin" data-img="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18.jpeg">
-      <img class="po-bg" src="/Projectssss/WhatsApp%20Image%202026-04-21%20at%2021.41.18.jpeg" alt="Atölye Çalışması">
-      <div class="po-card-info">
-        <div class="po-card-tag">Biesti Atölye · 2024</div>
-        <div class="po-card-title">Atölye Çalışması</div>
-      </div>
-    </div>
+   </div>
   </div>
 </div>
 
