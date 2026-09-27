@@ -171,7 +171,7 @@
     <p class="ab-p">2015'te küçük bir stüdyoda başladık. Elimizde kurutulmuş çiçekler, yüzümüzde büyük bir düğün konseptini hayata geçirme heyecanı vardı.</p>
     <p class="ab-p">Bugün 200'den fazla törenin ve onlarca markanın mekânlarına dokunmuş bir atölye olarak, hâlâ aynı sabırla ve el emeğiyle çalışıyoruz.</p>
     <p class="ab-p">Vitrin için olduğu kadar düğün için de aynı titizliği taşırız. Çünkü mekânlar, insanların hayatlarına dokunduğu anlardır.</p>
-    <div class="sig">Meryem Akarsun</div>
+    <div class="sig">Meryem Akarsu</div>
     <div class="sig-role">Kurucu & Tasarım Direktörü</div>
   </div>
 </section>
@@ -540,15 +540,15 @@
         </a>
       </div>
     </div>
-    <form class="form fu" data-d="2" onsubmit="return false">
+    <form class="form fu" data-d="2" id="contactForm" novalidate>
       <div class="fg-row">
-        <div class="fg"><label>Ad Soyad</label><input type="text" placeholder="Adınız soyadınız"/></div>
-        <div class="fg"><label>E-posta</label><input type="email" placeholder="ornek@mail.com"/></div>
+        <div class="fg"><label>Ad Soyad</label><input type="text" name="Ad Soyad" id="cf-name" placeholder="Adınız soyadınız"/></div>
+        <div class="fg"><label>E-posta</label><input type="email" name="E-posta" id="cf-email" placeholder="ornek@mail.com"/></div>
       </div>
-      <div class="fg"><label>Telefon</label><input type="tel" placeholder="+90 5__ ___ __ __"/></div>
+      <div class="fg"><label>Telefon</label><input type="tel" name="Telefon" id="cf-phone" placeholder="+90 5__ ___ __ __"/></div>
       <div class="fg">
         <label>Hizmet Türü</label>
-        <select>
+        <select name="Hizmet Türü" id="cf-svc">
           <option value="" disabled selected>Seçiniz</option>
           <option>Düğün Süsleme</option>
           <option>Kına Gecesi</option>
@@ -556,8 +556,8 @@
           <option>Vitrin & Marka</option>
         </select>
       </div>
-      <div class="fg"><label>Mesajınız</label><textarea placeholder="Etkinliğin tarihi, mekânı ve hayalinizden kısaca bahsedebilirsiniz…"></textarea></div>
-      <button class="f-btn mag"><span>Mesaj Gönder</span></button>
+      <div class="fg"><label>Mesajınız</label><textarea name="Mesaj" id="cf-msg" placeholder="Etkinliğin tarihi, mekânı ve hayalinizden kısaca bahsedebilirsiniz…"></textarea></div>
+      <button class="f-btn mag" type="submit" id="cf-submit"><span>Mesaj Gönder</span></button>
     </form>
   </div>
 </section>

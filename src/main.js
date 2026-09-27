@@ -222,6 +222,52 @@ revForm?.addEventListener('submit', () => {
   setTimeout(() => card.scrollIntoView({ behavior:'smooth', block:'center' }), 100);
 });
 
+/* ── CONTACT FORM → E-MAIL ───────────────────────────── */
+const contactForm = document.getElementById('contactForm');
+const cfSubmit    = document.getElementById('cf-submit');
+
+contactForm?.addEventListener('submit', async e => {
+  e.preventDefault();
+  const nameEl  = document.getElementById('cf-name');
+  const emailEl = document.getElementById('cf-email');
+  const msgEl   = document.getElementById('cf-msg');
+
+  [nameEl, emailEl, msgEl].forEach(el => el.classList.remove('err'));
+
+  let valid = true;
+  if (!nameEl.value.trim())                               { nameEl.classList.add('err');  valid = false; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())) { emailEl.classList.add('err'); valid = false; }
+  if (!msgEl.value.trim())                                { msgEl.classList.add('err');   valid = false; }
+  if (!valid) { showToast('Lütfen ad, e-posta ve mesaj alanlarını doldurun.'); return; }
+
+  const data = Object.fromEntries(new FormData(contactForm));
+  data._subject  = `Yeni iletişim formu — ${data['Ad Soyad']}`;
+  data._replyto  = data['E-posta'];
+  data._template = 'table';
+  data._captcha  = 'false';
+
+  const label = cfSubmit.querySelector('span');
+  cfSubmit.disabled = true;
+  label.textContent = 'Gönderiliyor…';
+
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/f04fa2778a7aac9c324270ea42685c85', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const out = await res.json().catch(() => ({}));
+    if (!res.ok || out.success === 'false' || out.success === false) throw new Error(out.message);
+    contactForm.reset();
+    showToast('Mesajınız gönderildi — en kısa sürede dönüş yapacağız.');
+  } catch {
+    showToast('Mesaj gönderilemedi. Lütfen WhatsApp üzerinden ulaşın.');
+  } finally {
+    cfSubmit.disabled = false;
+    label.textContent = 'Mesaj Gönder';
+  }
+});
+
 /* ── FAQ ACCORDION ───────────────────────────────────── */
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => {

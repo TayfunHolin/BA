@@ -723,7 +723,8 @@
     #rev-toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
     /* error state */
-    .rfg input.err, .rfg textarea.err, .rfg select.err {
+    .rfg input.err, .rfg textarea.err, .rfg select.err,
+    .fg input.err, .fg textarea.err, .fg select.err {
       border-color:rgba(196,113,74,.7);
     }
 
