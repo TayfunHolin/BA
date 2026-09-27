@@ -251,7 +251,7 @@ contactForm?.addEventListener('submit', async e => {
   label.textContent = 'Gönderiliyor…';
 
   try {
-    const res = await fetch('https://formsubmit.co/ajax/f04fa2778a7aac9c324270ea42685c85', {
+    const res = await fetch('https://formsubmit.co/ajax/biestiatolye@gmail.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(data)
